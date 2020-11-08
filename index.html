@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="main.js"></script>
+</head>
+<body>
+
+    <main>
+        <h1>Budget</h1>
+        <form onsubmit="addToTable(event)">
+        <div id="part1">
+            <div>
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" max="9999999">
+                <select id="cur">
+                    <option value="euro">EUR</option>
+                    <option value="dollar">USD</option>
+                </select>
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" id="date">
+            </div>
+        </div>
+
+        <div id="part2">
+            <label for="exp">Explanation</label>
+            <textarea id="exp"></textarea>
+        </div>
+
+        <div id="part3">
+            <div>
+                <a>Type</a>
+                <input type="radio" id="outcome" name="outcome" value="outcome"><label for="outcome">Outcome</label>
+                <input type="radio" id="income" name="income" value="income"><label for="income">Income</label>
+            </div>
+            <div>
+                <a>For</a>
+                <input type="radio" id="myself" name="myself" value="myself"><label for="myself">Self</label>
+                <input type="radio" id="family" name="family" value="family"><label for="family">Family</label>
+                <input type="radio" id="friend" name="friend" value="friend"><label for="friend">Friend</label>
+            </div>
+        </div>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+
+    <div id="table">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Explanation</th>
+                <th>Type</th>
+                <th>For</th>
+            </tr>
+        </thead>
+        <tbody id=data>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </div>
+    </table>
+    </main>
+</body>
+</html>

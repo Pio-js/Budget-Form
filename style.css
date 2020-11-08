@@ -1,0 +1,138 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/euros.jpg);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(184, 182, 182, 0.685);
+    width: 80vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 3px 3px 15px rgb(77, 76, 76),
+                -3px -3px 15px 0 rgb(77, 76, 76);
+}
+
+h1 {
+    width: 80vw;
+    text-align: center;
+    color: darkblue;
+    background-color: rgba(255, 255, 255, 0.575);
+    margin: 0;
+    padding: 10px;
+    border-radius: 25px 25px 0 0;
+}
+
+form {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#part1 {
+    width: 45%;
+    margin-top: 10px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+#part1 div {
+    width: 90%;
+    text-align: end;
+    margin-top: 10px;
+}
+
+#amount {
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+}
+
+#date {
+    border: none;
+    border-radius: 5px;
+}
+
+#part2 {
+    width: 45%;
+    margin-top: 20px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+textarea {
+    vertical-align: top;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+}
+
+#part3 {
+    width: 70vw;
+    margin-top: 20px;
+    display: flex;
+    color: darkblue;
+    justify-content: center;
+}
+
+#part3 div {
+    width: 45%;
+    text-align: center;
+}
+
+#part3 a {
+    font-weight: bold;
+}
+
+#submit {
+    width: 80vw;
+    height: 30px;
+    margin-top: 20px;
+    background-color: rgba(241, 112, 60, 0.568);
+    border: none;
+    color: white;
+    font-size: larger;
+}
+
+#submit:hover {
+    background-color: white;
+    color: rgb(194, 79, 34);
+}
+
+#table {
+    width: 90%;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(252, 249, 249, 0.685);
+    border-radius: 15px 15px 0 0;
+}
+
+
+@media (min-width:960px) {
+    main {
+        width: 960px;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    #submit {
+        width: 100%;
+    }
+}
